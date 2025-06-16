@@ -3,18 +3,64 @@
 <head>
     <title>WEB1 - welcome</title>
     <meta charset="utf-8">
+     <style>
+        body{
+            margin: 0;
+        }
+        a{
+            color:black;
+            text-decoration:none;
+        }
+        h1{
+            font-size: 45px;
+            text-align: center;
+            border-bottom: 1px solid gray;
+            margin: 0;
+            padding: 20px;
+        }
+        ol{
+            border-right: 1px solid gray;
+            width: 100px;
+            margin: 0;
+            padding: 20px;
+        }
+        #grid {
+        display: grid;
+        grid-template-columns: 150px 1fr;
+        }
+        #grid ol{
+            padding-left: 33px;
+        }
+        #grid #article{
+            padding-left: 25px;
+        }
+        @media(max-width:800px){
+            #grid{
+                display: block;
+            }
+            ol{
+                border-right:none;
+            }
+            h1{
+                border-bottom: none;
+            }
+        }
+        
+    </style>
 </head>
 <body>
-    <h1><a href="index.html">WEB</a></h1>
-    <ol>
-        <li><a href="1.html">HTML</a> </li>
-        <li><a href="2.html">CSS</a> </li>
-        <li><a href="3.html">JavaScript</a></li>
-    </ol>
-
-    <h2>WEB</h2>
-    <p>월드 와이드 웹(World Wide Web/WWW)은 1990년 12월 20일에 등장한 시스템으로, 전세계에 널리 퍼진 거미줄(Web)이란 단어 의미 그대로 인터넷 통신망에서 웹사이트를 하이퍼텍스트 마크업 언어로 작성하고, URL(uniform resource location)로 위치를 지정하고, 하이퍼텍스트 전송 프로토콜로 데이터를 전송하는 정보 시스템이다. 이 과정을 돕는 프로그램이 '웹 브라우저'와 '웹 서버'다. 'WWW', 'W3', 또는 간단하게 '웹(Web)'이라고도 하며, '따따따'라고도 읽는다.</p>
-    <p>효섭아 <br>내가 <strong>처음</strong> 만든 웹페이지야.</p>
-
+    <h1><a href="index.html">welcome</a></h1>
+        <div id="grid">
+        <ol>
+            <li><a href="1.html">HTML</a> </li>
+            <li><a href="2.html">CSS</a> </li>
+            <li><a href="3.html">JavaScript</a></li>
+        </ol>
+            <div id="article">
+            <h2>WEB</h2>
+            <p>월드 와이드 웹(World Wide Web/WWW)은 1990년 12월 20일에 등장한 시스템으로, 전세계에 널리 퍼진 거미줄(Web)이란 단어 의미 그대로 인터넷 통신망에서 웹사이트를 하이퍼텍스트 마크업 언어로 작성하고, URL(uniform resource location)로 위치를 지정하고, 하이퍼텍스트 전송 프로토콜로 데이터를 전송하는 정보 시스템이다. 이 과정을 돕는 프로그램이 '웹 브라우저'와 '웹 서버'다. 'WWW', 'W3', 또는 간단하게 '웹(Web)'이라고도 하며, '따따따'라고도 읽는다.</p>
+            <p>효섭아 <br>내가 <strong>처음</strong> 만든 웹페이지야.</p>
+            </div> 
+        </div>
 </body>
 </html>
